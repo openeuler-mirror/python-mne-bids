@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-mne-bids
-Version:	0.9
+Version:	0.10
 Release:	1
 Summary:	Organizing MEG, EEG, and iEEG data according to the BIDS specification and facilitating their analysis with MNE-Python
 License:	BSD-3-Clause
 URL:		https://github.com/mne-tools/mne-bids
-Source0:	https://files.pythonhosted.org/packages/a0/f2/1091a5e4e89746105577a8d00bf8ac1063f847f7363d8120a4d1d5d022e5/mne-bids-0.9.tar.gz
+Source0:	https://files.pythonhosted.org/packages/a0/56/6523372e32a2d36ba56ee8a719366c8bb75cfe763f1c27aa857b458978e4/mne-bids-0.10.tar.gz
 BuildArch:	noarch
 
 Requires:	python3-mne
@@ -37,7 +37,7 @@ Provides:	python3-mne-bids-doc
 MNE-BIDS is a Python package that allows you to read and write BIDS-compatible datasets with the help of MNE-Python.
 
 %prep
-%autosetup -n mne-bids-0.9
+%autosetup -n mne-bids-0.10
 
 %build
 %py3_build
@@ -77,6 +77,9 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Mon Aug 29 2022 hkgy <kaguyahatu@outlook.com> - 0.10-1
+- Update to 0.10
+
 * Fri Dec 17 2021 Python_Bot <Python_Bot@openeuler.org> - 0.9-1
 - Package Init
 
